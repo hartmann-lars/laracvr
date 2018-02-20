@@ -1,10 +1,10 @@
 <?php
-namespace Lhartmann\LaraCVR\Http\Controllers;
+namespace sh4dw\LaraCVR\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use Lhartmann\LaraCVR\CVRClient as CVR;
+use sh4dw\LaraCVR\CVRClient as CVR;
 
 class LaraCVRController extends Controller
 {

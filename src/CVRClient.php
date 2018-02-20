@@ -1,5 +1,5 @@
 <?php
-namespace Lhartmann\LaraCVR;
+namespace sh4dw\LaraCVR;
 
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Client;

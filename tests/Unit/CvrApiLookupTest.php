@@ -5,7 +5,7 @@ namespace Tests\Unit;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Lhartmann\LaraCVR\CVRClient;
+use sh4dw\LaraCVR\CVRClient;
 
 class CvrUnitTest extends TestCase
 {

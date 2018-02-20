@@ -13,6 +13,10 @@ class ComposerStaticInitd6079e4b92554a19d9071e2c194c72fb
     );
 
     public static $prefixLengthsPsr4 = array (
+        's' => 
+        array (
+            'sh4dw\\LaraCVR\\' => 14,
+        ),
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
@@ -30,10 +34,6 @@ class ComposerStaticInitd6079e4b92554a19d9071e2c194c72fb
         array (
             'Psr\\SimpleCache\\' => 16,
             'Psr\\Container\\' => 14,
-        ),
-        'L' => 
-        array (
-            'Lhartmann\\LaraCVR\\' => 18,
         ),
         'I' => 
         array (
@@ -53,6 +53,11 @@ class ComposerStaticInitd6079e4b92554a19d9071e2c194c72fb
     );
 
     public static $prefixDirsPsr4 = array (
+        'sh4dw\\LaraCVR\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+            1 => __DIR__ . '/../..' . '/tests',
+        ),
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
@@ -78,11 +83,6 @@ class ComposerStaticInitd6079e4b92554a19d9071e2c194c72fb
         'Psr\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
-        ),
-        'Lhartmann\\LaraCVR\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-            1 => __DIR__ . '/../..' . '/tests',
         ),
         'Illuminate\\Support\\' => 
         array (

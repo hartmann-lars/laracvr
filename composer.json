@@ -1,12 +1,12 @@
 {
-    "name": "Lhartmann/LaraCVR",
+    "name": "sh4dw/LaraCVR",
     "type": "library",
     "description": ":package_description",
     "keywords": [
-        "Lhartmann",
+        "sh4dw",
         "LaraCVR"
     ],
-    "homepage": "https://github.com/Lhartmann/LaraCVR",
+    "homepage": "https://github.com/sh4dw/LaraCVR",
     "license": "MIT",
     "authors": [
         {
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Lhartmann\\LaraCVR\\": "src"
+            "sh4dw\\LaraCVR\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Lhartmann\\LaraCVR\\": "tests"
+            "sh4dw\\LaraCVR\\": "tests"
         }
     },
     "scripts": {

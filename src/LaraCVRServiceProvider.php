@@ -1,6 +1,6 @@
 <?php
 
-namespace Lhartmann\LaraCVR;
+namespace sh4dw\LaraCVR;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
@@ -49,7 +49,7 @@ class LaraCVRServiceProvider extends ServiceProvider
      */
     public function setupRoutes(Router $router)
     {
-        $router->group(['namespace' => 'Lhartmann\LaraCVR\Http\Controllers'], function ($router) {
+        $router->group(['namespace' => 'sh4dw\LaraCVR\Http\Controllers'], function ($router) {
             require __DIR__.'/Http/routes.php';
         });
     }
