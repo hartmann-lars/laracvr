@@ -47,6 +47,10 @@
         "branch-alias": {
             "dev-master": "1.0-dev"
         }
+        ,
+        "providers": [
+            "Sh4dw\\Laracvr\\LaracvrServiceProvider"
+        ]
     },
     "config": {
         "sort-packages": true
