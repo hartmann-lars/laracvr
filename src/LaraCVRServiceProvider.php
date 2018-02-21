@@ -61,7 +61,7 @@ class LaracvrServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->registerLaraCVR();
+        $this->registerLaracvr();
 
         // use this if your package has a config file
         config([
@@ -69,10 +69,11 @@ class LaracvrServiceProvider extends ServiceProvider
         ]);
     }
 
+
     private function registerLaracvr()
     {
         $this->app->bind('Laracvr', function ($app) {
-            return new LaraCVR($app);
+            return new Laracvr($app);
         });
         /*
         $this->app->singleton(LaraCVR::class, function ($app) {
