@@ -7,12 +7,8 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-**Note:** Replace ```Lars Hartmann``` ```sh4dw``` ```https://github.com/sh4dw``` ```lh@purebyte.dk``` ```sh4dw``` ```LaraCVR``` ```Wrapper for danish CVR API``` with their correct values in [README.md](README.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md), [LICENSE.md](LICENSE.md) and [composer.json](composer.json) files, then delete this line. You can run `$ php prefill.php` in the command line to make all replacements at once. Delete the file prefill.php as well.
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what
-PSRs you support to avoid any confusion with users and contributors.
-
-A CVR wrapper for the
+A simple Laravel CVR wrapper for the danish CVR API.
 
 
 ## Install
@@ -22,9 +18,17 @@ Via Composer
 ``` bash
 $ composer require sh4dw/LaraCVR
 ```
+## Config
+``` bash
+Add the following to your .env file
+CVR_USER=<CVR USERNAME>
+CVR_PASSWORD=<CVR PASSWORD>
+```
 
 ## Usage
-Lookup a CVR with the following example:
+Lookup a CVR with the following example (query could be any valid Elasticseach format).
+
+Read more: [Virk CVR documentation](http://datahub.virk.dk/dataset/system-til-system-adgang-til-cvr-data)
 ``` php
 use sh4dw\LaraCVR\CVRClient;
 
@@ -39,7 +43,7 @@ return $response;
 ```
 
 ### Response format:
-``` json
+``` javascript
 {
     'millis': <Execution time in millis>,
     'timedOut': <true/false>,
@@ -47,6 +51,7 @@ return $response;
     'data': <array containing all data for the CVR record>
 }
 ```
+
 
 ## Change log
 
