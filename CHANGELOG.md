@@ -4,19 +4,22 @@ All notable changes to `LaraCVR` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## NEXT - YYYY-MM-DD
+## 2018-02-21
 
 ### Added
-- Nothing
+- Auto package discovery in composer
 
 ### Deprecated
-- Nothing
+- An empty feature test
 
 ### Fixed
-- Nothing
+- Bad package name
+- Renamed config file to align with new packagename
+- Unit tests are now using the root installations phpunit instead of package level
 
 ### Removed
-- Nothing
+- Silly vendor folder that was added by a mistake
+- An unused feauture test
 
 ### Security
 - Nothing
