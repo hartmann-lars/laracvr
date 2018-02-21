@@ -45,10 +45,10 @@ return $response;
 ### Response format:
 ``` javascript
 {
-    'millis': <Execution time in millis>,
-    'timedOut': <true/false>,
-    'totalHits': <Number of hits found (results)>,
-    'data': <array containing all data for the CVR record>
+    'millis': 2, // Execution time in millis
+    'timedOut': false, // If timed out at the API endpoint
+    'totalHits': 1, //Number of hits found (results)
+    'data': [] //array containing all data for the CVR record
 }
 ```
 
