@@ -51,6 +51,7 @@
             "providers": [
                 "Sh4dw\\Laracvr\\LaracvrServiceProvider"
             ]
+        }
     },
     "config": {
         "sort-packages": true
