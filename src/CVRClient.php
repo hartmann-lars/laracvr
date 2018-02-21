@@ -34,9 +34,9 @@ class CVRClient implements CVRClientInterface
         //load a request with authentication from the config file
         $request = $client->request(
             $requestType,
-            config('laraCVR.cvr_api_path'),
+            config('laracvr.cvr_api_path'),
             [
-                'auth' =>  [config('laraCVR.cvr_user'), config('laraCVR.cvr_password')],
+                'auth' =>  [config('laracvr.cvr_user'), config('laracvr.cvr_password')],
                 'json' =>
                 [
                     'from' => $from,

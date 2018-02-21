@@ -129,7 +129,7 @@ class CvrUnitTest extends TestCase
         $this->expectException('GuzzleHttp\Exception\ConnectException');
 
         //invalidate the hostname
-        config(['laraCVR.cvr_api_path' => 'x']);
+        config(['laracvr.cvr_api_path' => 'x']);
 
         CVRClient::request(
             $this->validCvrLookupQuery,
@@ -145,7 +145,7 @@ class CvrUnitTest extends TestCase
     public function testInvalidCredentials()
     {
         $this->expectException('GuzzleHttp\Exception\ClientException');
-        config(['laraCVR.cvr_user' => 'foo']);
+        config(['laracvr.cvr_user' => 'foo']);
 
         CVRClient::request(
             $this->validCvrLookupQuery,
