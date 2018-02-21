@@ -12,7 +12,7 @@ class CvrUnitTest extends TestCase
     //variables
     protected $validCvrLookupQuery = [
         'term' => [
-            'cvrNummer' =>  37361798
+            'Vrvirksomhed.cvrNummer' =>  37361798
         ]
     ];
     protected $emptyCvrLookupQuery = [

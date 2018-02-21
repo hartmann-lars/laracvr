@@ -8,12 +8,27 @@ use Sh4dw\Laracvr\CVRClient as CVR;
 
 class LaracvrController extends Controller
 {
-    public function show(int $cvr)
+    public function company(int $cvr)
     {
         $data = CVR::request(
             [
                 'term' => [
-                    'cvrNummer' =>  $cvr
+                    'Vrvirksomhed.cvrNummer' =>  $cvr
+                ]
+            ],
+            'POST', //request type
+            0, //from
+            1 //size
+        );
+        return $data;
+    }
+
+    public function production(int $p)
+    {
+        $data = CVR::request(
+            [
+                'term' => [
+                    'VrproduktionsEnhed.pNummer' =>  $p
                 ]
             ],
             'POST', //request type
