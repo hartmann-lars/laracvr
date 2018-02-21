@@ -1,7 +1,7 @@
 {
     "name": "sh4dw/LaraCVR",
     "type": "library",
-    "description": ":package_description",
+    "description": "Wrapper for danish CVR API",
     "keywords": [
         "sh4dw",
         "LaraCVR"
