@@ -6,11 +6,14 @@ use GuzzleHttp\Client;
 
 class CVRClient implements CVRClientInterface
 {
-    public static function request(array $query, string $requestType = 'POST', int $from = 0, int $size = 1)
+    public static function request(array $query, string $requestType = 'POST', int $from = null, int $size = null)
     {
+        //attributes to pass the query
+        $queryAttributes = [];
+
         //validate query
         if (empty($query)) {
-            throw new \InvalidArgumentException('The query is empty');
+            throw new \InvalidArgumentException('The query is empty which is currently not supported');
         }
         //validate request type
         $_requestTypes = ['POST', 'GET'];
@@ -18,12 +21,20 @@ class CVRClient implements CVRClientInterface
             throw new \InvalidArgumentException('The request type is invalid');
         }
         //validate from (offset)
-        if ($from < 0) {
-            throw new \InvalidArgumentException('The "from" offset should be unsigned');
+        if ($from !== null) {
+            if ($from < 0) {
+                throw new \InvalidArgumentException('The "from" offset should be unsigned or just null');
+            } else {
+                $queryAttributes['from'] = $from;
+            }
         }
         //validate size
-        if ($size < 1) {
-            throw new \InvalidArgumentException('The "size" should be larger than zero');
+        if ($size !== null) {
+            if ($size < 1) {
+                throw new \InvalidArgumentException('The "size" should be larger than zero or just null');
+            } else {
+                $queryAttributes['size'] = $size;
+            }
         }
 
         //instantiate a new GuzzleHttp Client with JSON headers
@@ -40,7 +51,7 @@ class CVRClient implements CVRClientInterface
                 'json' =>
                 [
                     'from' => $from,
-                    'size' => $size,
+                    'size' => 1,
                     'query' => $query
                 ]
             ]
