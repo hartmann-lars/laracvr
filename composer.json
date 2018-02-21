@@ -4,7 +4,11 @@
     "description": "Wrapper for danish CVR API",
     "keywords": [
         "sh4dw",
-        "laracvr"
+        "laracvr",
+        "cvr",
+        "cvrapi",
+        "cvr api",
+        "virk"
     ],
     "homepage": "https://github.com/sh4dw/laracvr",
     "license": "MIT",
