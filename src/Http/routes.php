@@ -1,2 +1,2 @@
 <?php
-Route::get('/show/{cvr}', 'LaraCVRController@show');
+Route::get('/show/{cvr}', 'LaracvrController@show');

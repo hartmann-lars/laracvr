@@ -13,10 +13,6 @@ class ComposerStaticInitd6079e4b92554a19d9071e2c194c72fb
     );
 
     public static $prefixLengthsPsr4 = array (
-        's' => 
-        array (
-            'sh4dw\\LaraCVR\\' => 14,
-        ),
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
@@ -29,6 +25,7 @@ class ComposerStaticInitd6079e4b92554a19d9071e2c194c72fb
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\Translation\\' => 30,
+            'Sh4dw\\Laracvr\\' => 14,
         ),
         'P' => 
         array (
@@ -53,11 +50,6 @@ class ComposerStaticInitd6079e4b92554a19d9071e2c194c72fb
     );
 
     public static $prefixDirsPsr4 = array (
-        'sh4dw\\LaraCVR\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/src',
-            1 => __DIR__ . '/../..' . '/tests',
-        ),
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
@@ -75,6 +67,11 @@ class ComposerStaticInitd6079e4b92554a19d9071e2c194c72fb
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Sh4dw\\Laracvr\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+            1 => __DIR__ . '/../..' . '/tests',
         ),
         'Psr\\SimpleCache\\' => 
         array (

@@ -1,11 +1,11 @@
 <?php
 
-namespace sh4dw\LaraCVR;
+namespace Sh4dw\Laracvr;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
 
-class LaraCVRServiceProvider extends ServiceProvider
+class LaracvrServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
@@ -22,17 +22,17 @@ class LaraCVRServiceProvider extends ServiceProvider
     public function boot()
     {
         // use this if your package has views
-        $this->loadViewsFrom(realpath(__DIR__.'/resources/views'), 'LaraCVR');
+        $this->loadViewsFrom(realpath(__DIR__.'/resources/views'), 'Laracvr');
 
         // use this if your package has lang files
-        $this->loadTranslationsFrom(__DIR__.'/resources/lang', 'LaraCVR');
+        $this->loadTranslationsFrom(__DIR__.'/resources/lang', 'Laracvr');
 
         // use this if your package has routes
         $this->setupRoutes($this->app->router);
 
         // use this if your package needs a config file
         $this->publishes([
-                 __DIR__.'/config/config.php' => config_path('laraCVR.php'),
+                 __DIR__.'/config/config.php' => config_path('laracvr.php'),
         ]);
 
         // use the vendor configuration file as fallback
@@ -49,7 +49,7 @@ class LaraCVRServiceProvider extends ServiceProvider
      */
     public function setupRoutes(Router $router)
     {
-        $router->group(['namespace' => 'sh4dw\LaraCVR\Http\Controllers'], function ($router) {
+        $router->group(['namespace' => 'Sh4dw\Laracvr\Http\Controllers'], function ($router) {
             require __DIR__.'/Http/routes.php';
         });
     }
@@ -65,13 +65,13 @@ class LaraCVRServiceProvider extends ServiceProvider
 
         // use this if your package has a config file
         config([
-                 'config/laraCVR.php',
+                 'config/laracvr.php',
         ]);
     }
 
-    private function registerLaraCVR()
+    private function registerLaracvr()
     {
-        $this->app->bind('LaraCVR', function ($app) {
+        $this->app->bind('Laracvr', function ($app) {
             return new LaraCVR($app);
         });
         /*

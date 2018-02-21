@@ -1,5 +1,5 @@
 <?php
- namespace sh4dw\LaraCVR;
+ namespace Sh4dw\Laracvr;
 
 interface CVRClientInterface
 {

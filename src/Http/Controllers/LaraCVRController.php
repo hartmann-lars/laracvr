@@ -1,12 +1,12 @@
 <?php
-namespace sh4dw\LaraCVR\Http\Controllers;
+namespace Sh4dw\Laracvr\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-use sh4dw\LaraCVR\CVRClient as CVR;
+use Sh4dw\Laracvr\CVRClient as CVR;
 
-class LaraCVRController extends Controller
+class LaracvrController extends Controller
 {
     public function show(int $cvr)
     {

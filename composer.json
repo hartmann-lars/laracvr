@@ -1,12 +1,12 @@
 {
-    "name": "sh4dw/LaraCVR",
+    "name": "Sh4dw/Laracvr",
     "type": "library",
     "description": "Wrapper for danish CVR API",
     "keywords": [
-        "sh4dw",
-        "LaraCVR"
+        "Sh4dw",
+        "Laracvr"
     ],
-    "homepage": "https://github.com/sh4dw/LaraCVR",
+    "homepage": "https://github.com/sh4dw/laracvr",
     "license": "MIT",
     "authors": [
         {
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "sh4dw\\LaraCVR\\": "src"
+            "Sh4dw\\Laracvr\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "sh4dw\\LaraCVR\\": "tests"
+            "Sh4dw\\Laracvr\\": "tests"
         }
     },
     "scripts": {

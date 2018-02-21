@@ -1,4 +1,4 @@
-# LaraCVR
+# laracvr
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -16,7 +16,7 @@ A simple Laravel CVR wrapper for the danish CVR API.
 Via Composer
 
 ``` bash
-$ composer require sh4dw/LaraCVR
+$ composer require sh4dw/laracvr
 ```
 ## Config
 ``` bash
@@ -30,7 +30,7 @@ Lookup a CVR with the following example (query could be any valid Elasticseach f
 
 Read more: [Virk CVR documentation](http://datahub.virk.dk/dataset/system-til-system-adgang-til-cvr-data)
 ``` php
-use sh4dw\LaraCVR\CVRClient;
+use Sh4dw\Laracvr\CVRClient;
 
 $query = [
     'term' => [
@@ -80,17 +80,17 @@ If you discover any security related issues, please email lh@purebyte.dk instead
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/sh4dw/LaraCVR.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/sh4dw/laracvr.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/sh4dw/LaraCVR/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/sh4dw/LaraCVR.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/sh4dw/LaraCVR.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/sh4dw/LaraCVR.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/sh4dw/laracvr/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/sh4dw/laracvr.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/sh4dw/laracvr.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/sh4dw/laracvr.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/sh4dw/LaraCVR
-[link-travis]: https://travis-ci.org/sh4dw/LaraCVR
-[link-scrutinizer]: https://scrutinizer-ci.com/g/sh4dw/LaraCVR/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/sh4dw/LaraCVR
-[link-downloads]: https://packagist.org/packages/sh4dw/LaraCVR
+[link-packagist]: https://packagist.org/packages/sh4dw/laracvr
+[link-travis]: https://travis-ci.org/sh4dw/laracvr
+[link-scrutinizer]: https://scrutinizer-ci.com/g/sh4dw/laracvr/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/sh4dw/laracvr
+[link-downloads]: https://packagist.org/packages/sh4dw/laracvr
 [link-author]: https://github.com/sh4dw
 [link-contributors]: ../../contributors
