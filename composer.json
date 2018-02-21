@@ -1,10 +1,10 @@
 {
-    "name": "Sh4dw/Laracvr",
+    "name": "sh4dw/laracvr",
     "type": "library",
     "description": "Wrapper for danish CVR API",
     "keywords": [
-        "Sh4dw",
-        "Laracvr"
+        "sh4dw",
+        "laracvr"
     ],
     "homepage": "https://github.com/sh4dw/laracvr",
     "license": "MIT",
