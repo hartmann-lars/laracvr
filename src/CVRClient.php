@@ -51,7 +51,7 @@ class CVRClient implements CVRClientInterface
                 'json' =>
                 [
                     'from' => $from,
-                    'size' => 1,
+                    'size' => $size,
                     'query' => $query
                 ]
             ]
